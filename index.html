@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shalabh Mittra's Birthday 💙</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  min-height:100vh;
+  color:white;
+  text-align:center;
+  font-family:'Segoe UI',sans-serif;
+  background:radial-gradient(ellipse at top,#183c85,#21083e 55%,#050b20);
+  overflow-x:hidden;
+}
+
+.stars{
+  position:fixed;inset:0;pointer-events:none;
+  background-image:radial-gradient(#fff 1px,transparent 1px),
+  radial-gradient(#64dcff 1px,transparent 1px);
+  background-size:43px 43px,79px 79px;
+  animation:stars 12s linear infinite;
+  opacity:.5;
+}
+
+@keyframes stars{
+  to{background-position:43px 86px,-79px 79px}
+}
+
+.container{
+  position:relative;z-index:1;
+  min-height:100vh;padding:35px 16px;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+}
+
+.tag{
+  color:#9aeaff;font-size:12px;
+  letter-spacing:3px;margin-bottom:22px;
+}
+
+h1{
+  font-size:clamp(43px,10vw,76px);
+  line-height:1.08;
+  background:linear-gradient(90deg,#fff,#65ddff,#d6a5ff,#fff0a3);
+  background-size:300%;
+  color:transparent;background-clip:text;
+  -webkit-background-clip:text;
+  animation:shine 5s linear infinite;
+  filter:drop-shadow(0 0 15px #238cff);
+}
+
+@keyframes shine{to{background-position:300%}}
+
+.name{
+  margin-top:18px;
+  font-size:clamp(27px,7vw,43px);
+  font-weight:900;color:#91eaff;
+  text-shadow:0 0 15px #218dff,0 0 35px #a34cff;
+  animation:glow 1.7s infinite alternate;
+}
+
+@keyframes glow{
+  to{text-shadow:0 0 25px #40d9ff,0 0 45px #b25cff}
+}
+
+.cake{
+  font-size:90px;margin:22px;
+  animation:bounce 1.5s infinite;
+  filter:drop-shadow(0 0 15px #258dff);
+}
+
+@keyframes bounce{
+  50%{transform:translateY(-14px) rotate(4deg)}
+}
+
+.card{
+  width:min(100%,440px);
+  padding:26px 21px;
+  border:1px solid #8ce5ff80;
+  border-radius:26px;
+  background:#ffffff12;
+  backdrop-filter:blur(13px);
+  box-shadow:0 0 35px #258aff28,inset 0 0 20px #ffffff08;
+}
+
+p{font-size:16px;line-height:1.9;color:#f5efff}
+
+.blue{
+  color:#78e1ff;
+  text-shadow:0 0 10px #278cff;
+}
+
+button{
+  margin:20px 4px 0;padding:14px 20px;
+  border:1px solid #ffffff70;border-radius:40px;
+  background:linear-gradient(100deg,#76e4ff,#c4a0ff,#fff0a2);
+  color:#10183c;font-size:14px;font-weight:800;
+  cursor:pointer;transition:.25s;
+  box-shadow:0 0 20px #3cafff45;
+}
+
+button:hover{
+  transform:scale(1.06);
+  box-shadow:0 0 28px #55cfff;
+}
+
+#surprise{
+  display:none;margin-top:25px;
+  animation:reveal 1s ease;
+}
+
+#surprise h2{
+  color:#8feaff;margin-bottom:13px;
+  text-shadow:0 0 12px #208dff;
+}
+
+@keyframes reveal{
+  from{opacity:0;transform:translateY(20px) scale(.95)}
+  to{opacity:1;transform:translateY(0) scale(1)}
+}
+
+.float{
+  position:fixed;bottom:-50px;z-index:5;
+  pointer-events:none;animation:floatUp linear forwards;
+}
+
+@keyframes floatUp{
+  to{transform:translateY(-115vh) rotate(360deg);opacity:0}
+}
+
+footer{
+  margin-top:24px;color:#a9dfff;
+  font-size:12px;letter-spacing:2px;
+}
+</style>
+</head>
+
+<body>
+<div class="stars"></div>
+
+<main class="container">
+
+  <div class="tag">✨ 💙 A SPECIAL DAY FOR A SPECIAL HUMAN 💙 ✨</div>
+
+  <h1>HAPPY<br>BIRTHDAY!</h1>
+
+  <div class="name">SHALABH MITTRA 😎💙</div>
+
+  <div class="cake">🎂</div>
+
+  <section class="card">
+
+    <p>
+      OYYYY MITTRRRR 😂💙🎉<br>
+      Aapka toh birthday aa gaya yoooo! 🥳🤌<br>
+      BIRTHDAYyyyyyyyy!😎👑<br><br>
+
+      May your life be full of happiness, success,
+      crazy memories and unlimited reasons to smile! ✨💙<br><br>
+
+      Hamesha aise hi mast rehna 😂🫶,
+      apne dreams achieve karna 🚀,
+      aur life mein khoob aage badhna! 💫🦋<br><br>
+
+      <span class="blue">
+        Stay blessed, keep smiling and never lose
+        that adorable pagalpan! 😂🤝💙
+      </span>
+    </p>
+
+    <button id="giftBtn" onclick="openGift()">
+      🎁 OPEN YOUR SURPRISE
+    </button>
+
+    <div id="surprise">
+      <h2>🎉 YOU ARE ONE OF A KIND 🎉</h2>
+
+      <p>
+        Happiest Birthday to my amazing best friend💙🫂🥹<br><br>
+
+        Thank you for being a part of my life. 💗
+        I hope this year brings you endless happiness,
+        unforgettable memories and all the success you deserve! ✨🌟<br><br>
+
+        Hamesha khush rehna mittr😂💙
+        apki saari wishes poori hon aur life ekdum zabardast rahe🧿🫶<br><br>
+
+        Aur haan mitra, birthday hai apkaa... 😂🤌<br>
+        <b class="blue">EK CHOCOLATE TOH BANTI HAI JI! 🍫😂</b><br><br>
+
+        <b>STAY AWESOME, BIRTHDAY BOY! 👑💙</b><br><br>
+
+        💙🩵🦋🎂🥳🎉💎✨🫂😂😎🤩🤪💜🤣😜
+      </p>
+    </div>
+
+  </section>
+
+  <footer>
+    HE HE HE HE 😂 HA HA HA HA 💙<br><br>
+  </footer>
+
+</main>
+
+<script>
+let opened=false;
+
+function openGift(){
+  document.getElementById("surprise").style.display="block";
+  document.getElementById("giftBtn").textContent="💙 SURPRISE UNLOCKED! 🎉";
+
+  if(!opened){
+    opened=true;
+    celebrate();
+  }
+}
+
+function celebrate(){
+  const emojis=[
+    "💙","💙","🩵","💜","💖","💗","😂","🥳","😎","🤩",
+    "🫶","🦋","🎉","🎈","✨","🎂","🍫","🥹","😜","🤪",
+    "💎","🌟","🧿","🎊","🤣","😝","🙌","💫","😁","😆"
+  ];
+
+  for(let i=0;i<120;i++){
+    const item=document.createElement("div");
+    item.className="float";
+    item.textContent=emojis[Math.floor(Math.random()*emojis.length)];
+    item.style.left=Math.random()*100+"vw";
+    item.style.fontSize=(18+Math.random()*25)+"px";
+    item.style.animationDuration=(3+Math.random()*4)+"s";
+    document.body.appendChild(item);
+    setTimeout(()=>item.remove(),7500);
+  }
+}
+
+setInterval(()=>{
+  const item=document.createElement("div");
+  item.className="float";
+  const emojis=["💙","🩵","🦋","✨","😂","😎","💜","🥳"];
+  item.textContent=emojis[Math.floor(Math.random()*emojis.length)];
+  item.style.left=Math.random()*100+"vw";
+  item.style.fontSize=(18+Math.random()*12)+"px";
+  item.style.animationDuration="6s";
+  document.body.appendChild(item);
+  setTimeout(()=>item.remove(),6000);
+},550);
+</script>
+
+</body>
+</html>
